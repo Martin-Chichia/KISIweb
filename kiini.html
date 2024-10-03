@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KISI</title>
+    <link href="kiinistyles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<div class="header-container">
+        
+  <p class="h1"><img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/logo.png" alt="Description of the image">KISI</p>
+  <p class="moto">The family core</p>
+
+
+</div>
+    
+
+
+   <div class="tab-container">
+    <div class="grid-container">
+      <button onclick="openTab('tab1')">HOME</button>
+      <button onclick="openTab('tab2')">ABOUT US</button>
+      <button onclick="openTab('tab3')">PROJECTS</button>
+      <button onclick="openTab('tab4')">PROJECT IMPACT</button>
+      <button onclick="openTab('tab5')">OPPOTUNITIES</button>
+      <button onclick="openTab('tab6')">BLOG</button>
+      <button onclick="openTab('tab7')">CONTACT US</button>
+
+
+
+  </div>
+   </div>
+   
+<div class="myslides-container">
+  <div id="tab1" class="description active">
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="mySlides ">
+          <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Image-20.jpg">
+          <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Kiini-Sustainable-Initiative-Face-Masks.jpg">
+        </div>
+      
+        <div class="mySlides ">
+          <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Beehives-by-Kiini.jpg">
+          <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Beehives-by-Kiini-2.jpg">
+        </div>
+
+      
+          <div class="mySlides ">
+            <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Installation-of-beehives.jpg">
+            <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Students-installing-Kiini-Sustainable-Initiative-beehives.jpg">
+        </div>
+
+          <div class="mySlide ">
+            <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Students-installing-Kiini-Initiative-beehives.jpg">
+            <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Students-and-their-teacher-installing-Kiini-Beehives.jpg">
+              
+        </div>
+        <div class="mySlide ">
+            <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Fish-farming-initiated-by-Kiini-Sustainable-Initiative.jpg">
+            <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/Students-with-Kiini-Initiative-recyclable-Sanitary-pads.jpg">
+              </div>
+            
+        </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <!-- The dots/bullets/indicators -->
+        <div class="tabone" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <hr class="line">
+          <div class="other-info">
+            <div>
+              <p class="info-head">Quick links</p>
+              <div class="quick-links">
+                <p><a href="https://www.kiiniinitiative.org/" aria-current="page"><span class="pagelayer-nav-menu-title">Home</span></a></p>
+                <p><a href="https://www.kiiniinitiative.org/about/"><span class="pagelayer-nav-menu-title">About Us</span></a></p>
+                <p><a href="https://www.kiiniinitiative.org/projects/"><span class="pagelayer-nav-menu-title">Projects</span></a></p>
+                <p><a href="https://www.kiiniinitiative.org/projects-impact/"><span class="pagelayer-nav-menu-title">Projects Impact</span></a></p>
+                <p><a href="https://www.kiiniinitiative.org/opportunities/"><span class="pagelayer-nav-menu-title">Opportunities</span></a></p>
+                <p><a href="https://www.kiiniinitiative.org/blog/"><span class="pagelayer-nav-menu-title">Blog</span></a></p>
+                <p><a href="https://www.kiiniinitiative.org/contact-us/"><span class="pagelayer-nav-menu-title">Contact Us</span></a></p>
+              </div>
+            </div>
+          
+          <div class="contact-us">
+            <p class="info-head">Contact us</p>
+            <p><i style="font-size:36px" class="fa">&#xf041;</i>Box 12019-10109 Nyeri, Kenya</p>
+            <p><i class="fa fa-phone" style="font-size:36px"></i> +254 702 988429</p>
+            <p><i class="fa fa-envelope" style="font-size:36px" ></i>info@kiiniinitiative.org</p>
+          </div>
+            
+           <div class="working-hours">
+            <p class="info-head">Working Hours</p>
+            <p>Mon - Fri - 8:00 Am - 5:00 Pm</p>
+            <p>Saturday - 9:00 Am - 1:00 Pm</p>
+            <p>Closed On Holidays </p>
+
+           </div> 
+         
+            
+
+          </div>
+
+        </div>
+        </div>
+        
+        <br>
+        
+        
+</div>
+  
+             
+              
+          
+          
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          
+            setTimeout(function(){
+              plusSlides(1); // Move to next slide after desired duration (in milliseconds)
+            }, 4000); 
+          }
+          </script>
+
+          
+    <div id="tab2" class="description">
+
+      <h1>Who We Are</h1>
+
+        <p>Kiini sustainable initiative (KISI) is a local Non-Governmental Organization (NGO) established and registered in December 2007 under the section 10 of the NGO Coordinating Act of Kenya Government. Mandated to work in Four counties namely Nyeri, Kirinyaga, Laikipia and Muranga counties.</p>
+        
+        
+        <p>It composes of a pool of experts with expansive knowledge in rural agriculture, community development, community livelihoods, community governance, and community health and community sanitation sectors.</p>
+        
+        <h2>Our Vision</h2>
+        <p> A self-sustainable and resourceful local community.</p>
+        
+        <h1>Our Mission</h1>
+        <p>To provide a platform for the underprivileged and marginalized people through mobilization, sensitization and utilization of the hidden resources, in order to meet their socio-economic needs in Kenya</p>
+        
+        <h1>Our Core Values</h1>
+        
+        <p>The following core values embody what KISI stands for, what drives us, what we believe in and what directs decisions, actions and relationships with others on a daily basis :</p>
+    </div>
+    <div id="tab3" class="description active">
+        <p1><span class="star">&#9733; </span>GIRLS EQUITY PROJECT </p1>
+        <p> <span class="star">&#9733; </span>Rural-Based financial management</p>
+         <p><span class="star">&#9733; </span> Bee keeping adoption by working with schools and communities </p>
+         </div>
+     <div class="description">
+         <span class="star">&#9733; </span> Girls equity project 
+    </div>
+    <script>
+        function openTab(tabName) {
+            var i, tabContent;
+            tabContent = document.getElementsByClassName("description");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+        window.onload = function() {
+  var selectedTab = localStorage.getItem('selectedTab');
+  if (selectedTab) {
+    openTab(selectedTab);
+  } else {
+    // If no tab is selected, default to opening the first tab
+    openTab('tab1');
+  }
+};
+    </script>
+</body>
+</html>

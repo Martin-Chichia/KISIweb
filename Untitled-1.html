@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIINI SUSTAINABLE INITIATIVE</title>
+    <style>
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            background-color: grey;
+            padding: 13px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-family: arial;
+            font-weight: 700;   
+        }
+        .h1 {
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+        .moto {
+            margin-top: 0px;
+            margin-right: 0px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            border: 1px;
+            padding: 10px;
+            column-gap: 20px;    
+        }
+        .button {
+            width: 100%;
+            color: rgb(97, 7, 7);
+            font-weight: 700;
+        }
+        .description {
+            display: grid;
+            grid-template-rows: 10px 10px 10px 10px 10px;
+            color: rgb(8, 8, 8);
+            font-size: 20px;
+            font-weight: 700;
+            row-gap: 0px;
+            margin-left: 2px;          
+        }
+        .star {
+            color: rgb(1, 153, 255);
+            border-radius: 2px;
+            background-color: brown;
+            column-gap: 2px;
+        }
+        .logo {
+            text-align: left;
+        }
+        .description1 {
+            display: none; /* Hide all tab contents by default */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> 
+            <img src="https://www.kiiniinitiative.org/sitepad-data/uploads/2020/06/logo.png" alt="Description of the image">
+        </div>
+        <p class="h1">KIINI SUSTAINABLE INITIATIVE</p>
+        <p class="moto">The family core</p>
+    </div>
+   
+    <div class="grid-container">
+        <button onclick="openTab('tab1')">HOME</button>
+        <button onclick="openTab('tab2')">ABOUT US</button>
+    </div>
+
+    <div id="tab1" class="description1">
+        <span class="star">&#9733; </span>Girls equity project 
+    </div>
+    <div class="description">
+        <span class="star">&#9733; </span>Rural-Based financial management 
+    </div>
+    <div class="description">
+        <span class="star">&#9733; </span> Bee keeping adoption by working with schools and communities 
+    </div>
+    <div class="description">
+        <span class="star">&#9733; </span> Girls equity project 
+    </div>
+    <div id="tab2" class="description1">
+       <p>Who We Are
+
+        Kiini sustainable initiative (KISI) is a local Non-Governmental Organization (NGO) established and registered in December 2007 under the section 10 of the NGO Coordinating Act of Kenya Government. Mandated to work in Four counties namely Nyeri, Kirinyaga, Laikipia and Muranga counties.
+        
+        
+        It composes of a pool of experts with expansive knowledge in rural agriculture, community development, community livelihoods, community governance, and community health and community sanitation sectors.
+        
+        Our Vision
+         A self-sustainable and resourceful local community.
+        
+        Our Mission
+        To provide a platform for the underprivileged and marginalized people through mobilization, sensitization and utilization of the hidden resources, in order to meet their socio-economic needs in Kenya
+        
+        Our Core Values
+        
+        The following core values embody what KISI stands for, what drives us, what we believe in and what directs decisions, actions and relationships with others on a daily basis :</p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabContent;
+            tabContent = document.getElementsByClassName("description1");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
